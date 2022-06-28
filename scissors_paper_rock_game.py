@@ -1,17 +1,17 @@
 def win():
-	print "you win from " + computerChoice
+	print ("you win from " + computerChoice)
 def lose():
-	print "you lose from "+ computerChoice
+	print ("you lose from "+ computerChoice)
 
 index=0
 while index<5:
 
 	import random
-	elementOfList=["paper","scissors","stone"]
+	elementOfList=["paper","scissors","rock"]
 	computerChoice=random.choice(elementOfList)
 
 
-	playerChoice=raw_input("ente your choice from/ paper,scissors,stone ")
+	playerChoice=input("ente your choice from/ paper,scissors,rock")
 
 
 	if  playerChoice==computerChoice:
@@ -22,7 +22,7 @@ while index<5:
 	elif playerChoice == "scissors" and computerChoice == "paper":
 		win()
 
-	elif playerChoice == "stone" and computerChoice == "scissors":
+	elif playerChoice == "rock" and computerChoice == "scissors":
 		win()
 
 	else:
