@@ -17,7 +17,7 @@ while index<5:
 	if  playerChoice==computerChoice:
 		print ("draw!")
 
-	elif playerChoice =="paper" and computerChoice == "stone":
+	elif playerChoice =="paper" and computerChoice == "rock":
 		win()
 	elif playerChoice == "scissors" and computerChoice == "paper":
 		win()
